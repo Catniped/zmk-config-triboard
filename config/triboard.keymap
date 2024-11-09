@@ -202,9 +202,9 @@ ZMK_BEHAVIOR(hls, hold_tap,
 //                         ┃           ┃    TAB    ┃    SPC    ┃   ┃    BSPC   ┃    ENT    ┃           ┃
 //                         ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
              bindings = <
-     &kp FR_Q        &kp FR_W       &kp FR_F       &kp FR_P    &kp FR_B        &kp FR_J    &kp FR_L    &kp FR_U       &kp FR_Y       &semicolon_colon
-     &hml LCTRL FR_A &hml LGUI FR_R &hls SUP FR_S  &kp FR_T    &kp FR_D        &kp FR_H    &kp FR_N    &kp FR_E       &hmr LGUI FR_I &hmr LCTRL FR_O
-     &kp FR_Z        &kp FR_X       &kp FR_C       &kp FR_G    &kp FR_V        &kp FR_K    &kp FR_M    &comma_lt      &dot_gt        &slash_question
+     &kp FR_Q        &kp FR_W       &kp FR_E       &kp FR_R    &kp FR_T        &kp FR_Y    &kp FR_U    &kp FR_I       &kp FR_O       &hmr LCTRL FR_P
+     &hml LCTRL FR_A &hml LGUI FR_S &hls SUP FR_D  &kp FR_F    &kp FR_G        &kp FR_H    &kp FR_J    &kp FR_K       &hmr LGUI FR_L &semicolon_colon
+     &kp FR_Z        &kp FR_X       &kp FR_C       &kp FR_V    &kp FR_B        &kp FR_N    &kp FR_M    &comma_lt      &dot_gt        &slash_question
                                     &none          &mt LSHFT TAB   &lt SYM SPACE   &kp BSPC    &lt NAV RET &none
                         >;
         };
@@ -228,7 +228,7 @@ ZMK_BEHAVIOR(hls, hold_tap,
              bindings = <
     &kp ESC            &kp FR_AT_SIGN    &kp FR_AMPERSAND &kp FR_DOLLAR &kp FR_PERCENT        &kp FR_CARET &kp FR_EQUAL  &kp FR_PLUS  &e_acute          &e_grave
     &hml LCTRL FR_HASH &hml LGUI FR_LPAR &kp FR_LBRC      &kp FR_LBKT   &kp FR_MINUS          &kp FR_BSLH  &kp FR_RBKT   &kp FR_RBRC  &hml LGUI FR_RPAR &hml LCTRL FR_PIPE
-    &c_cedilla         &kp FR_ASTERISK   &kp FR_SQT       &kp FR_DQT    &kp FR_UNDERSCORE     &kp FR_GRAVE &kp FR_TILDE  &kp FR_EXCL  &a_grave          &kp FR_CIRCUMFLEX
+    &trans         &kp FR_ASTERISK   &kp FR_SQT       &kp FR_DQT    &kp FR_UNDERSCORE     &kp FR_GRAVE &kp FR_TILDE  &kp FR_EXCL  &trans          &kp FR_CIRCUMFLEX
                                         &trans           &trans         &trans                &kp DEL      &trans     &trans
                         >;
         };
@@ -252,12 +252,15 @@ ZMK_BEHAVIOR(hls, hold_tap,
              bindings = <
                 &kp FR_N1      &kp FR_N2            &kp FR_N3          &kp FR_N4   &kp FR_N5             &kp FR_N6   &kp FR_N7   &kp FR_N8   &kp FR_N9   &kp FR_N0
                 &kp LCTRL      &kp LGUI             &kp C_PREVIOUS     &kp C_NEXT  &kp FR_MIDDLE_DOT     &kp LCTRL   &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT
-                &u_grave       &kp C_VOLUME_DOWN    &kp C_VOLUME_UP    &kp C_PP    &kp FR_EURO           &kp LGUI    &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
+                &trans       &kp C_VOLUME_DOWN    &kp C_VOLUME_UP    &kp C_PP    &kp FR_EURO           &kp LGUI    &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
                                                     &trans             &trans      &mo ADJ               &trans      &trans      &trans
                         >;
         };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+
+
 
 
         adjust_layer {
