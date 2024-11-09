@@ -1,7 +1,5 @@
 #!/bin/sh -e
 
-trash ~/Downloads/firmware || true
-
 unzip ~/Downloads/firmware.zip -d ~/Downloads/firmware
 cd ~/Downloads/firmware
 
@@ -20,6 +18,7 @@ done
 echo "Flashing complete, removing firmware files so that you don't accidentally flash the same firmware again."
 
 # Remove those files just in case we forget to redownload the firmware next time.
-trash ~/Downloads/firmware ~/Downloads/firmware.zip
+rm -rf ~/Downloads/firmware 
+rm ~/Downloads/firmware.zip
 
 echo "All done, have a nice day!"
